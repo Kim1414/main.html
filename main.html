@@ -1,0 +1,396 @@
+<html>
+<title>www.alaehtorismo.com</title>
+<head> 
+
+<style>
+
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 5px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 20%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-image: url('BATANGAS TOURIST.jpg');
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+  height: auto;
+}
+
+/* The Close Button (x) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+.kl_m{
+background-image: url('BATANGAS TOURIST.jpg');
+background-repeat: no-repeat;
+height: 100px;
+font-family:AR DESTINE;
+font-size: 35px;
+text-shadow: 3px 2px 3px black;
+
+}
+
+#km:hover {
+  opacity: 0.8;
+  background-color: #4CAF50;
+  color: white;
+  
+  }
+  #myIm{   width: 100%;
+  height: auto;
+  }
+  #kl_m{float:left;
+ }
+ table{
+ width:60%;}
+ .km_m{
+ text-shadow: 1px 2px 4px white;
+ background-color: white;
+ }
+ 
+ .shadow{ text-shadow: 3px 1px 3px white;}
+ 
+ .km_i{
+float:left;
+with: 10%;}
+.bat{
+font-size: 50px;
+text-shadow: 2px 3px 4px black;
+font-family:AR DESTINE;
+position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);}
+  .con{
+  position: relative;
+  text-align: center;
+  color: white;
+}
+#km{
+color: white
+ margin: 8px ;
+cursor: pointer;
+width: 100%;
+background-color: #4CAF50;
+text-decoration: none;
+text-shadow: 1px 2px 6px black;
+font-family: AR DESTINE;
+color: white;
+font-size: 20px;
+ padding: 2.5px 10px;
+}
+#my{ 
+width:100%;
+height: 40%;
+}
+.water{ text-shadow: 1px 2px 3px black;
+	
+}
+body{
+ background-color: lightgray;
+}
+@media screen and (max-width:300px)
+
+</style>
+
+</head>
+<body >
+<div class="kl_m">
+<center>
+<font size="20"color="  white">WWW.ALAEHTURISMO.COM</font></div>
+</center>
+
+<div class="kj_l">
+<a href="main.html" id="km"> Home </a>  &nbsp; <a href="about.html"id="km"title="About ALAEH TURISMO">About</a> </font>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;" id="km"title="User Login" >Login</button>
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="main.html" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="login.png" alt="Avatar" class="avatar" width>
+    </div>
+
+    <div class="container">
+      <label for="uname"><div class="shadow"><b>Username</b></div></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><div class="shadow"><b>Password</b></div></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        <a href="main.html">
+      <button>Login</button></a>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"><div class="shadow"> Remember me</div>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+</div>
+
+
+
+
+
+<center>
+
+
+
+
+<div class="con">
+<img id="my"  src="BATANGAS TOURIST.jpg"  >   <div class="bat"> BATANGAS TOURIST SPOT </div></div>
+
+
+
+<table border="0">
+<td >
+<br><center>
+<div class="km_m">
+
+<img id="myIm"  src="batangas-fortune-island.jpg" > </div></td><tr><td><div class="km_m"> <p>
+<b>Fortune Island </b>is located Nasugbu in Batangas. It used to be a private island harboring an exclusive
+ luxury resort. But it is difficult and costly to maintain a luxury resort without a ready source of fresh water.
+ One cannot drink luxury. Consequently, it ceased its operations in 2006. 
+One remarkable reminder of its grandeur stands atop the island’s limestone cliff overlooking the sea – an acropolis with Grecian pillars and statues.
+<br>
+<a href="https://www.google.com/maps/dir/14.011298,120.8798583/Fortune+Island,+Nasugbu,+Batangas/@14.0332476,120.5455341,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33bdeaf78ca63c35:0x4831c0ffa53a9e99!2m2!1d120.4913889!2d14.0552778?hl=en">
+<button> View Direction</button></a>
+
+<iframe src="https://youtube.com/embed//Na2kohcKnUo" name="matabung"width="100%" height="auto" frameborder="0"> </iframe>
+
+</p></div>
+</td><tr>
+<td >
+<br>
+<center>
+<div class="km_m">
+<img id="myIm"  src="fantacyworld.jpg" > </div></td><tr><td> <div class="km_m"><p>
+<b>Fantasy World</b> A CASTLE SITS ATOP A hill in the Philippines, its colorful walls adding an unexpected pop of color to the surrounding greenery. The stalwart structure, which looks like an image straight from a fairytale, seems oddly out of place.
+
+There were grand plans for the castle and its surrounding theme park to become the “Disneyland of the Philippines.” Called Fantasy World, it was meant to rival the beloved international amusement parks.
+
+But for the people behind Fantasy World, opening the park was a dream that never came true. The businessman who backed the project ran into financial issues before construction was complete, forcing him to abandon his plan.
+
+Now, the castle’s once-bright exterior is fading. Paint peels from the walls of its unfinished rooms. The rides lay dormant, never able to grumble to life beneath hordes of delighted children.
+
+Though the park couldn’t open as planned, you can still enter and explore the Disneyland that could have been. You can walk across the rope bridge that leads to the park’s tree house, which offers beautiful views of 
+the local scenery. You can even climb the castle’s towers and feel like a real-life Rapunzel surveying the empty kingdom.
+<br>
+<a href="https://www.google.com/maps/dir/14.011298,120.8798583/Fantasy+World,+Diokno+Highway,+Lemery,+Batangas/@14.0138233,120.8740198,17z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33bd9e49c6ebc8b1:0x43414900f43c0b42!2m2!1d120.873034!2d14.0156364?hl=en">
+<button> View Direction</button></a>
+<iframe src="https://youtube.com/embed/Xa9014zGHAQ" width="100%" height="auto"frameborder="0"> </iframe>
+<p>
+</td ><tr><td><br><center>
+<div class="km_m">
+<img id="myIm"  src="taal.jpg" > </div></td><tr><td> <div class="km_m"><p>
+<b>The Taal Basilica</b>, canonically known as the Minor Basilica of Saint Martin of Tours, is a Minor Basilica in the town of Taal, Batangas in the Philippines,
+ within the Archdiocese of Lipa.
+ It is considered to be the largest church in the Philippines and in Asia, standing 88.6 metres long and 48 metres wide.<br>
+<b>Address:</b> Calle San Martin, Taal, 4208 Batangas<br>
+<b>Heritage designation:</b> National Historical Landmark<br>
+<b>Priest in charge:</b> Rev. Fr. Manuel Luis Guazon<br>
+<b>Founded:</b> 1572<br>
+<b>Architectural styles:</b> Baroque architecture, Neoclassical architecture
+ <br>
+ <a href="https://www.google.com/maps/dir/14.011298,120.8798583/Basilica+of+St.+Martin+of+Tours,+Calle+San+Martin,+Taal,+Batangas/@13.9470922,120.8275898,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33bd0a246a5a69b9:0xde6f612d574bef5b!2m2!1d120.9247997!2d13.880613?hl=en">
+<button> View Direction</button></a>
+<iframe src="https://youtube.com/embed/GbtBxv68H3w" width="100%" height="auto"frameborder="0"> </iframe>
+ </p></div>
+</td><tr>
+<td ><br><center>
+<div class="km_m">
+<img id="myIm"  src="taal lake.jpg" > </div></td><tr><td> <div class="km_m"><p>
+<b>Taal Volcano</b>  is a large caldera filled by Taal Lake in the Philippines. Located in the province of 
+Batangas, the volcano is the second-most active volcano in the Philippines, with 34 recorded historical eruptions, 
+all of which were concentrated on Volcano Island, near the middle of Taal Lake.<br>
+<b>Last eruption:</b> 12 January 2020<br>
+<b>Elevation:</b> 311 m<br>
+<b>Prominence:</b> 306 m<br>
+<b>Location:</b> Talisay and San Nicolas Batangas, Philippines<br>
+<b>Volcanic arc/belt:</b> Luzon Volcanic Arc<br>
+<b>Easiest route:</b> Daang Kastila<br>
+ 
+<a href="https://www.google.com/maps/dir/14.011298,120.8798583/Taal+Volcano,+Talisay/@13.9910089,120.8512043,12z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33bd738d30c66c4f:0x749396e27e5f3873!2m2!1d120.9976909!2d14.0112531?hl=en">
+<button> View Direction</button></a>
+
+<iframe src="https://youtube.com/embed/BT7uKDtZRVU" name="matabung"width="100%" height="auto"frameborder="0"> </iframe>
+</p></div>
+</td><tr>
+
+<td ><br><center>
+<div class="km_m">
+<img id="myIm"  src="matabungkay.jpg" > </div></td><tr><td> <div class="km_m"><p>
+
+<b>  Matabungkay Beach </b> is a barangay of the municipality of Lian, Batangas, the Philippines. 
+It is known for its white sand beach which is reasonably accessible from Manila.
+ It was originally 'discovered' to be a great weekend or daytrip destination in the early 1950s, 
+ allegedly by sun starved German residents of Manila
+<a href="https://www.google.com/maps/dir/14.011298,120.8798583/matabungkay/@14.0054673,120.6133185,11z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x33bdbe80d6b98973:0xdc3ea2325e5144a!2m2!1d120.6144163!2d13.9615946?hl=en" > <button> View Direction</button></a>
+
+
+<iframe src="https://youtube.com/embed/tbP34q__2pU" width="100%" height="auto"frameborder="0"> </iframe>
+</p>
+</div>
+</td><tr>
+</table>
+</center>
+<center>
+<br><br><div class="water"><font color="lightgray">
+WWW.ALAEHTURISMO.COM</font></div>
+<br>
+<br>
+</center>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+</body>
+</html>
